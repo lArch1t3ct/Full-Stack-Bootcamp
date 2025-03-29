@@ -33,65 +33,128 @@
       grid-template: 414px 9px 130px 9px 155px 9px 20px / 320px 9px 198px 9px 153px 9px 50px;
     }
 
-    .red {
-      background-color: var(--red);
-    }
-
     .gap {
       background-color: var(--gap-color);
     }
 
-    #first-vertical {
+    .gray {
+      background-color: var(--white);
+    }
+
+    .red {
+      background-color: var(--red);
+    }
+
+    .blue {
+      background-color: var(--blue);
+    }
+
+    .yellow {
+      background-color: var(--yellow);
+    }
+
+    .black {
+      background-color: var(--black);
+    }
+
+    #grid-item-2 {
       grid-column: 2 / 3 ;
       grid-row: 1 / -1;
     }
 
-    #second-vertical {
+    #grid-item-13 {
       grid-column: 4 / 5;
       grid-row: -2 / -1;
     }
 
-    #third-vertical {
+    #grid-item-7 {
       grid-column: 6 / 7;
       grid-row: -1 / 3;
     }
 
-    #first-horizontal {
+    #grid-item-4 {
       grid-row: 2 / 3;
       grid-column: 1 / -1;
     }
 
-    #second-horizontal {
+    #grid-item-9 {
       grid-row: 4 / 5;
       grid-column: -1 / 7;
     }
 
-    #third-horizontal {
+    #grid-item-10 {
       grid-row: -3 / -2;
-      grid-column: 1 / -2
+      grid-column: 1 / -2;
     }
 
+    #grid-item-1 {
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+    }
+
+    #grid-item-3 {
+      grid-row: 1 / 2;
+      grid-column: 3 / -1;
+    }
+
+    #grid-item-5 {
+      grid-row: 3 / 6;
+      grid-column: 1 / 2;
+    }
+
+    #grid-item-6 {
+      grid-row: 3 / 6;
+      grid-column: 3 / 6;
+    }
+
+    #grid-item-8 {
+      grid-row: 3 / 4;
+      grid-column: -2 / -1; /* or 7 / 8 */
+
+      border-bottom-color: var(--gap-color);
+      border-bottom-width: 2px;
+      border-bottom-style: solid;
+    }
+
+    #grid-item-11 {
+      grid-row: -2 / -1; /* or 7 / 8 */
+      grid-column: 1 / 2;
+    }
+
+    #grid-item-12 {
+      grid-row: -2 / -1; /* or 7 / 8 */
+      grid-column: 3 / 4;
+    }
+
+    #grid-item-14 {
+      grid-row: -2 / -1; /* or 7 / 8 */
+      grid-column: 5 / 6;
+    }
+
+    #grid-item-15 {
+      grid-row: 5 / -1;
+      grid-column: -2 / -1; /* 7 / 8 */
+    }
   </style>
 </head>
 
 <body>
-  <!-- Write your HTML here -->
    <div class="grid-container">
-    <div class="red"></div> <!-- 1 -->
-    <div id="first-vertical" class="gap"></div> <!-- 2 -->
-    <div class="gray"></div> <!-- 3 -->
-    <div id="first-horizontal" class="gap"></div> <!-- 4 -->
-    <div class="gray"></div> <!-- 5 -->
-    <div class="gray"></div> <!-- 6 -->
-    <div id="third-vertical" class="gap"></div> <!-- 7 -->
-    <div class="blue"></div> <!-- 8 -->
-    <div id="second-horizontal" class="gap"></div> <!-- 9 -->
-    <div id="third-horizontal" class="gap"></div> <!-- 10 -->
-    <div class="gray"></div> <!-- 11 -->
-    <div class="yellow"></div> <!-- 12 -->
-    <div id="second-vertical" class="gap"></div> <!-- 13 -->
-    <div class="black"></div> <!-- 14 -->
-    <div class="gray"></div> <!-- 15 -->
+    <div id="grid-item-1" class="red"></div> <!-- 1 -->
+    <div id="grid-item-2" class="gap"></div> <!-- 2 -->
+    <div id="grid-item-3" class="gray"></div> <!-- 3 -->
+    <div id="grid-item-4" class="gap"></div> <!-- 4 -->
+    <div id="grid-item-5" class="gray"></div> <!-- 5 -->
+    <div id="grid-item-6" class="gray"></div> <!-- 6 -->
+    <div id="grid-item-7" class="gap"></div> <!-- 7 -->
+    <div id="grid-item-8" class="blue"></div> <!-- 8 -->
+    <div id="grid-item-9" class="gap"></div> <!-- 9 -->
+    <div id="grid-item-10" class="gap"></div> <!-- 10 -->
+    <div id="grid-item-11" class="gray"></div> <!-- 11 -->
+    <div id="grid-item-12" class="yellow"></div> <!-- 12 -->
+    <div id="grid-item-13" class="gap"></div> <!-- 13 -->
+    <div id="grid-item-14" class="black"></div> <!-- 14 -->
+    <div id="grid-item-15" class="gray"></div> <!-- 15 -->
    </div>
 </body>
 
